@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="div_center" style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <h2>{{counter | async}}</h2>
+  <h2>No Of Msg: {{noOfMsg | async}}</h2>
+  <button (click)="increment()">Click me</button>
+</div>
+
+<div class="partition">
+  <app-todo-list></app-todo-list>
+</div>
+<div class="partition partition-filled">
+  <app-todo-dashboard></app-todo-dashboard>
+</div>
